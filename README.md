@@ -1,5 +1,7 @@
 node vm sandbox
-==========
+===============
+[![Build Status](https://travis-ci.org/johvik/node_vm_sandbox.png?branch=master)](https://travis-ci.org/johvik/node_vm_sandbox)
+[![Coverage Status](https://coveralls.io/repos/johvik/node_vm_sandbox/badge.png?branch=master)](https://coveralls.io/r/johvik/node_vm_sandbox?branch=master)
 
 Runs a script string in a vm within a child process.
 
