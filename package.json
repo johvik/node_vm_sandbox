@@ -1,0 +1,25 @@
+{
+  "name": "node_vm_sandbox",
+  "version": "0.0.1",
+  "description": "Runs a script in a vm within a child process",
+  "author": "johvik",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johvik/node_vm_sandbox.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "grunt release"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-jsbeautifier": "~0.2.6",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mocha-cov": "~0.2.1",
+    "should": "~3.1.2"
+  },
+  "engine": "node >= 0.10.22"
+}
