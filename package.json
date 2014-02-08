@@ -1,6 +1,6 @@
 {
   "name": "node_vm_sandbox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Runs a script in a vm within a child process",
   "author": "johvik",
   "repository": {

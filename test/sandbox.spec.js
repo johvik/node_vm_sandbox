@@ -57,4 +57,27 @@ describe('sandbox', function() {
       done();
     });
   });
+
+  it('should handle object data', function(done) {
+    sandbox.run({
+      env: path.join(__dirname, 'test_env.js'),
+      script: 'res = env.test;\n' +
+        'res.ret = env.s;',
+      data: {
+        test: {
+          a: 'b',
+          c: 1.5
+        },
+        s: 'abc'
+      }
+    }, function(err, res) {
+      should.not.exist(err);
+      res.should.eql({
+        a: 'b',
+        c: 1.5,
+        ret: 'abc'
+      });
+      done();
+    });
+  });
 });
