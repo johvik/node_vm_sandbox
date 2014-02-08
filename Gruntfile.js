@@ -80,6 +80,12 @@ module.exports = function(grunt) {
           }
         }
       },
+      cov: {
+        options: {
+          reporter: 'html-cov',
+          output: 'coverage.html'
+        }
+      },
       options: {
         files: ['test/**/*.js']
       }
@@ -91,6 +97,7 @@ module.exports = function(grunt) {
     'jsbeautifier:default',
     'mochacov:test'
   ]);
+  grunt.registerTask('cov', ['mochacov:cov']);
   grunt.registerTask('release', ['jshint',
     'jsbeautifier:release',
     'mochacov:test',

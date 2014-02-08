@@ -10,7 +10,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "grunt release"
+    "test": "grunt release",
+    "blanket": {
+      "pattern": ["node_vm_sandbox/lib"]
+    }
   },
   "dependencies": {},
   "devDependencies": {
