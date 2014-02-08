@@ -30,6 +30,13 @@ describe('sandbox', function() {
     });
   });
 
+  it('should return error', function(done) {
+    sandbox.run({}, function(err) {
+      err.should.equal('Child did not get a script');
+      done();
+    });
+  });
+
   it('should throw', function(done) {
     sandbox.run({
       script: 'throw 1;'
