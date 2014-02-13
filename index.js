@@ -1,1 +1,1 @@
-exports = require('./lib/sandbox');
+module.exports = require('./lib/sandbox');

@@ -3,7 +3,7 @@ process.env.NODE_ENV = 'test';
 var path = require('path');
 var should = require('should');
 
-var sandbox = require('../lib/sandbox');
+var sandbox = require('../');
 
 describe('sandbox', function() {
   it('should not run', function(done) {
